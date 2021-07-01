@@ -18,7 +18,7 @@ model.add(MaxPooling2D(pool_size=(2, 2)))
 model.add(Flatten())
 model.add(Dense(units=128, activation='relu'))
 model.add(Dense(units=64, activation='relu'))
-model.add(Dense(units=3, activation='softmax'))
+model.add(Dense(units=5, activation='softmax'))
 model.summary()
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 from keras_preprocessing.image import ImageDataGenerator
